@@ -4,59 +4,78 @@
 <title>Hayden Stern</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- old stylsheets
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+-->
 <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
-<link href="https://fonts.googleapis.com/css?family=Muli:300" rel="stylesheet">
-
-
-
 </head>
 <body>
-<div class="flex-container">
-	<div class="container">
-		<nav class="navbar">
-			<h1 class="header main-logo">Hayden Stern</h1>
-			<ul>
-				<li><a href="index.html" class="active">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	<div class="content-container">
-		<div class="flex-content">
-			<div class="content">
-				<h1 class="header">About Me</h1>
-				<hr>
-				<img src="assets/images/bio.jpg" class="image">
-				<p class="main-text">Hayden Stern is a full stack developer and illustrator based in Los Angeles, California. They enjoy solving problems and building innovative solutions in multiple formats, whether it be in Javascript, two dimensional art, or worn apparel.</p>
-				<p class="main-text">
-				Cur fortior sit, si illud, quod tute concedis, asperum et vix ferendum putabit? Non igitur potestis voluptate omnia dirigentes aut tueri aut retinere virtutem. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Si enim non fuit eorum iudicii, nihilo magis hoc non addito illud est iudicatum-. Cui Tubuli nomen odio non est? Ergo opifex plus sibi proponet ad formarum quam civis excellens ad factorum pulchritudinem?
-				</p>
-			</div>
-		</div>
-		<div class="flex-fix">
-			<div class="social">
-				<h3 class="header">Connect with Me</h3>
-				<hr class="hr-social">
-				<div class="media-box">	
-					<a href="#" class="icon">
-						<img src="assets/images/github.png" class="icon">
-					</a>
-					<a href="#" class="icon">
-						<img src="assets/images/linkedin.png" class="icon">
-					</a>
-					<a href="#" class="icon">
-						<img src="assets/images/stackoverflow.png" class="icon">
-					</a>				
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <header class="navbar-brand">Hayden Stern</header>
+    </div>
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">About <span class="sr-only">(current)</span></a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+     </div>
+    </div>
+	<div class="container-fluid" id="content">
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-md-6 panel panel-default">
+				<div class="panel-body">
+					<h1>About Me</h1>
+					<hr>
+					<img src="assets/images/bio.jpg" class="img-responsive pull-left hidden-xs" style="padding: 15px">
+					<img src="assets/images/bio.jpg" class="img-responsive visible-xs">
+					<p>Hayden Stern is a full stack developer and illustrator based in Los Angeles, California. They enjoy solving problems and building innovative solutions in multiple formats, whether it be in Javascript, two dimensional art, or worn apparel.</p>
+					<p>
+					Cur fortior sit, si illud, quod tute concedis, asperum et vix ferendum putabit? Non igitur potestis voluptate omnia dirigentes aut tueri aut retinere virtutem. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Si enim non fuit eorum iudicii, nihilo magis hoc non addito illud est iudicatum-. Cui Tubuli nomen odio non est? Ergo opifex plus sibi proponet ad formarum quam civis excellens ad factorum pulchritudinem?
+					</p>
 				</div>
 			</div>
-			
+			<div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-1 panel panel-default">
+				<div class="panel-body">
+					<h3 class="header text-center">Connect with Me</h3>
+					<hr class="hr-social">
+					<div class="row center-block">	
+						<div class="col-x-12 col-md-4">
+							<a href="#" class="icon">
+								<img src="assets/images/github.png" class="icon">
+							</a>
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<a href="#" class="icon">
+								<img src="assets/images/linkedin.png" class="icon">
+							</a>
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<a href="#" class="icon">
+								<img src="assets/images/stackoverflow.png" class="icon">
+							</a>
+						</div>				
+					</div>
+				</div>
+			</div>		
 		</div>
 	</div>
-		<footer>
+		<footer class="panel-footer text-center">
 			© copyright 2017 Hayden Stern
 		</footer>
 	</div>
-</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
