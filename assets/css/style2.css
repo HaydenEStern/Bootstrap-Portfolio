@@ -1,8 +1,16 @@
+.navbar-brand {
+	font-weight: bold;
+	
+}
 
+.panel-footer {
+	background-color: black;
+	color: grey;
+}
 
 #content {
 	background-color: #fff;
-	background: url("../images/roughcloth.png");
+	background: url("../images/upfeathers.png");
 	padding-top: 70px;
 	
 }

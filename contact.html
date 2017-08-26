@@ -1,61 +1,84 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Contact Me</title>
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
-<link href="https://fonts.googleapis.com/css?family=Muli:300" rel="stylesheet">
 </head>
 <body>
-<div class="flex-container">
-	<div class="container">
-		<nav class="navbar">
-			<h1 class="header main-logo">Hayden Stern</h1>
-			<ul>
-				<li><a href="index.html">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html" class="active">Contact</a></li>
-			</ul>
-		</nav>
-	<div class="content-container">
-		<div class="flex-content">
-			<div class="content">
+	<div class="container-fluid" id="content">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <header class="navbar-brand">Hayden Stern</header>
+    </div>
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li class="active"><a href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
+      </ul>
+     </div>
+    </div>
+</nav>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-md-6 panel panel-default">
+			<div class="panel-body">
 				<h1 class="header">Contact</h1>
 				<hr>
-						<form>
-			<p>Name</p>
-				<input type="text" name="name"><br><br>
-			<p>Email</p>
-				<input type="text" name="email"><br><br>
-			<p>Message</p>
-				<textarea name="message" rows="10" cols="30"></textarea><br><br>
-			<input type="submit">
-</form>
+					<form>
+ 						 <div class="form-group">
+    						<label for="name">Name:</label>
+   							<input type="text" class="form-control" id="name">
+  						</div>
+  						<div class="form-group">
+    						<label for="email">Email:</label>
+    						<input type="email" class="form-control" id="email">
+ 						</div>
+  						<div class="form-group">
+  							<label for="comment">Comment:</label>
+  							<textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+    					<button type="submit" class="btn btn-default">Submit</button>
+					</form>
 			</div>
 		</div>
-		<div class="flex-fix">
-			<div class="social">
-				<h3 class="header">Connect with Me</h3>
-				<hr class="hr-social">
-				<div class="media-box">	
-					<a href="#" class="icon">
-						<img src="assets/images/github.png" class="icon">
-					</a>
-					<a href="#" class="icon">
-						<img src="assets/images/linkedin.png" class="icon">
-					</a>
-					<a href="#" class="icon">
-						<img src="assets/images/stackoverflow.png" class="icon">
-					</a>	
+<div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-1 panel panel-default">
+				<div class="panel-body">
+					<h3 class="header text-center">Connect with Me</h3>
+					<hr class="hr-social">
+					<div class="row center-block">	
+						<div class="col-xs-4">
+							<a href="#" class="icon">
+								<img src="assets/images/github.png" class="icon">
+							</a>
+						</div>
+						<div class="col-xs-4">
+							<a href="#" class="icon">
+								<img src="assets/images/linkedin.png" class="icon">
+							</a>
+						</div>
+						<div class="col-xs-4">
+							<a href="#" class="icon">
+								<img src="assets/images/stackoverflow.png" class="icon">
+							</a>
+						</div>				
+					</div>
 				</div>
-			</div>
+			</div>		
 		</div>
 	</div>
-		<footer>
+		<footer class="panel-footer text-center">
 			© copyright 2017 Hayden Stern
 		</footer>
 	</div>
-</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>
